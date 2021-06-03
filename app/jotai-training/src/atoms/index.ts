@@ -10,3 +10,12 @@ export const mangaAtom = atom({
 })
 
 export const doubledCountAtom = atom((get) => get(countAtom) * 2)
+
+const urlAtom = atom('/src/json/data.json')
+
+export const fetchUrlAtom = atom(
+  async (get) => {
+    const response = await fetch(get(urlAtom))
+    return await response.json()
+  }
+)

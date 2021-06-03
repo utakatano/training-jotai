@@ -1,0 +1,8 @@
+{
+  "foo": {
+    "value": 100
+  },
+  "bar": {
+    "label": "hello world!"
+  }
+}
